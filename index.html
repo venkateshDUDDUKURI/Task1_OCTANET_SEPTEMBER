@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <head class="header">
+      <nav class="navbar">
+        <div><a href="#" class="logo">V-WAY</a></div>
+        <ul class="links">
+          <li><a href="#" class="Home">Home</a></li>
+          <li><a href="#" class="service">Service</a></li>
+          <li><a href="#" class="about">About</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+        <button class="action-btn">Get Started</button></i>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#" class="Home">Home</a></li>
+          <li><a href="#" class="service">Service</a></li>
+          <li><a href="#" class="about">About</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+          <li><button class="action-btn">Get Started</button></i></li>
+        </div>
+      </nav>
+    </head>
+      <section class="custom-txt">
+      <span>Hi Visitor!</span>
+      <h1 class="content">Welcome to the landing page...</h>
+        <br>
+        <button class="costum border rounded" type="register">Register</button>
+  </section>
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const toggleBtnItem = document.querySelector('.toggle-btn i');
+    const dropdownMenu = document.querySelector('.dropdown_menu');
+  
+    toggleBtn.onclick = function () {
+      dropdownMenu.classList.toggle('open');
+      const isOpen = dropdownMenu.classList.contains('open');
+      toggleBtnItem.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    };
+  </script>
+  </body>
+</html>
